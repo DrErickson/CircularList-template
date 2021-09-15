@@ -32,7 +32,12 @@ public:
 	// Pre:  List has been initialized. List does not contain item.
 	// Post: If (list is full), FullList exception is thrown;
 	//       otherwise, newItem is inserted into the sorted list.
-	
+
+	void DeleteItem(T item);
+	bool Contains(T item);
+	int GetLength();
+	void MakeEmpty();
+
 	void ResetIterator();
 	T GetNextItem();
 

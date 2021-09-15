@@ -6,7 +6,7 @@
 #include "CircularType.h"
 
 using namespace std;
-void PrintList(ofstream& outFile, UnsortedList<int>& list);
+void PrintList(ofstream& outFile, CircularType<int>& list);
 
 int main()
 {
@@ -19,7 +19,7 @@ int main()
 
 	int number;
 	int item;
-	UnsortedList<int> list;
+	CircularType<int> list;
 
 	bool found;
 
@@ -119,7 +119,7 @@ int main()
 };
 
 
-void PrintList(ofstream& dataFile, UnsortedList<int>& list)
+void PrintList(ofstream& dataFile, CircularType<int>& list)
 // Pre:  list has been initialized.      
 //       dataFile is open for writing.   
 // Post: Each component in list has been written to dataFile.
